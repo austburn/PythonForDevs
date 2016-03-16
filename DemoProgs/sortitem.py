@@ -6,6 +6,11 @@ This program uses both the sort method and the sorted function.
 
 from operator import itemgetter
 
+
+my_list = [['z', '3'],['a', '2'],['g', '4']]
+my_list.sort(key=lambda a: a[1])
+print my_list, '\n'
+
 my_list = [['z', '3'],['a', '2'],['g', '4']]
 my_list.sort(key=itemgetter(1))
 print my_list, '\n'

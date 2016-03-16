@@ -1,0 +1,7 @@
+- Iterator remembers the state of an iterable
+    - raise StopIteration to notify it is done - don't normally need to handle this
+- for loop
+    - use continue statement to end current iteration and start next
+    - commonly used with range
+    - mainly used as an iterator
+- break/continue only work in the loop in which they're executed

@@ -1,0 +1,5 @@
+- strings
+    - string[start:stop:step]
+        - start: first or only item we want
+        - stop: first item we don't want
+        - step: an increment other than 1

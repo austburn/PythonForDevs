@@ -1,0 +1,3 @@
+- try/except
+- else - ran if there is no exception
+- finally - ran regardless of whether an exception is raised

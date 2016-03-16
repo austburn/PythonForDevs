@@ -9,7 +9,7 @@ monlst = []
 for i in range(12):
     monlst.append([0, 0, 0, 200]) # sublist[Days, Accum Temp, Max Hi, Min Hi]
 
-fin = open('/home/student/pydata/tmpprecip2012.dat', 'r')
+fin = open('/home/austin/learning/PythonForDevs/LabsData/tmpprecip.dat', 'r')
 # fin = open('c:/pydata/tmpprecip2012.dat', 'r')
 for linein in fin:
     try:
@@ -31,5 +31,5 @@ for cntr, totmp, maxtmp, mintmp in monlst:
     mon += 1
     print '{:2d} {:6.1f} {:3d} {:3d}'.format(
         mon, totmp/float(cntr), maxtmp, mintmp)
-                   
-                  
+
+

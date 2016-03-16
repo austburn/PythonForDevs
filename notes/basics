@@ -1,0 +1,20 @@
+- print()
+    - a statement, not a function
+    - Python2 uses the space as a separator (commas are replaced with spaces)
+    - Python3 allows you to specify a separator that the comma will use
+- None type
+    - There is only ever one None object in Python - initialized at the beginning of execution
+- Identifiers and Types
+    - Weak data typing - Duck Typing
+        - Think Java - and integer is an integer from now till the end of time (must cast)
+        - "If it walks like a duck and it quacks like a duck, it's a duck"
+    - No size or precision for numbers
+    - Integers are essentially unlimited in size
+    - Floats are all double precision
+    # sizecalc.py
+- Math Ops
+    - // - floor division
+        - same result in python2
+        - 7//3 = 2.333, 7/3 = 2 in python3
+        - 7.0//3.0 = 2.333, 7.0/3.0 = 2 in python 2
+    - ** - exponentiation

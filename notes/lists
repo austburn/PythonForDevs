@@ -1,0 +1,53 @@
+- append vs extend
+    - extend appends each item of an iterable
+        - [1].extend('ab')
+          [1, 'a', 'b']
+    - append appends an item
+        - [1].append('ab')
+          [1, 'ab']
+- remove does an equals check, not an is check - looking for value, not exact item
+- list_times.py - append() is way faster than adding to/creating a new list every time
+- list unpacking
+    a, b, c = [1, 2, 3  ]
+
+
+>>> a = [1, 2, 3]
+>>> b = a
+>>> b
+[1, 2, 3]
+>>> a
+[1, 2, 3]
+>>> hex(id(a))
+'0x7f07f29a3dd0'
+>>> hex(id(b))
+'0x7f07f29a3dd0'
+>>> a.append(10)
+>>> b
+[1, 2, 3, 10]
+>>>
+
+
+>>> a = [1, 2, 3]
+>>> a.append([1])
+>>> import copy
+>>> b = copy.copy(a)
+>>> hex(id(a)
+... )
+'0x7f07f29cc4d0'
+>>> hex(id(b))
+'0x7f07f29579e0'
+>>> a
+[1, 2, 3, [1]]
+>>> b
+[1, 2, 3, [1]]
+>>> a[-1].append(2)
+>>> a
+[1, 2, 3, [1, 2]]
+>>> b
+[1, 2, 3, [1, 2]]
+>>> print 'oh noes'
+oh noes
+>>>
+
+
+USE copy.deepcopy!!
